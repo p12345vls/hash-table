@@ -1,0 +1,148 @@
+//----------------------------------------------------
+  output 1 of MyTunes.java
+//----------------------------------------------------
+Test file: resources/findGenres.txt
+Test file: resources/findIDs.txt
+
+NOTES:  Example test files for hashing based on genres names and Ids
+-----------------------------------------------------
+
+Total number of songs read 59600 
+Test file for id table: resources/findIDs.txt 
+
+Finding song id: 2
+Song id 2 found in tableOfSongIDs. 
+
+Finding song id: 3
+Song id 3 found in tableOfSongIDs. 
+
+Finding song id: 4
+Song id 4 found in tableOfSongIDs. 
+
+Finding song id: 99
+Song id 99 found in tableOfSongIDs. 
+
+Finding song id: 99999
+Song id 99999 NOT found in tableOfSongIDs.
+Done with testing table of ids.
+
+Test file for genre table: resources/findGenres.txt 
+
+Number of store songs in each genre:
+classic pop and rock 	  23895 
+                punk 	   3200 
+                folk 	  13192 
+                 pop 	   1617 
+dance and electronica 	   4935 
+               metal 	   2103 
+      jazz and blues 	   4334 
+           classical 	   1874 
+             hip-hop 	    434 
+     soul and reggae 	   4016 
+
+Finding genre: pop
+Genre "pop" found in tableOfGenres. 
+
+Finding genre: classic pop and rock
+Genre "classic pop and rock" found in tableOfGenres. 
+
+Finding genre: FOOTHILL
+Done with testing table of genres.
+
+
+Done with MyTunes.
+//----------------------------------------------------
+  output 2 of SongCompInt.java
+//----------------------------------------------------
+ - Testing the SongCompInt by inserting, finding, and removing 
+   Integer values. 
+-----------------------------------------------------
+
+Total number of songs read 59600 
+Populating id table..
+ids inserted:59600
+
+Find the ids in the table..
+found: 59600
+
+Remove ids from the table..
+removed: 59600
+TableOfSongIDs size:0
+
+
+//----------------------------------------------------
+  output 3 of TestClass.java
+//----------------------------------------------------
+ - The TestClass tests quadratic probing hash table search
+   vs. sequential find on the ArrayList of SongEntry objects.
+   
+ - Graph representation in resources/graph1.png 
+ 
+ - By the following test and the graph representation (resources/graph1.png ),
+   it turns out that the hash table performance is O(1) even though the table
+   size has been resized four times.The sequential
+   operations provide performance O(n) which means the performance is
+   directly proportional to the number of elements in the array.
+
+-----------------------------------------------------
+
+Total number of songs read 59600 
+
+
+Testing quadratic probing hash table vs. sequential find:
+
+Number of elements, N =50
+
+Quadratic Search:
+Table length :197
+Collisions :23
+Songs found : 1
+Time elapsed: 0 hrs : 0 mins : 0 sec : 0 ms : 60766 ns
+
+Linear Search: 
+Array length :50
+Songs found :1
+Time elapsed: 0 hrs : 0 mins : 0 sec : 0 ms : 58780 ns
+________________________________________________________
+
+Number of elements, N =500
+
+Quadratic Search:
+Table length :1597
+Collisions :408
+Songs found : 1
+Time elapsed: 0 hrs : 0 mins : 0 sec : 0 ms : 33949 ns
+
+Linear Search: 
+Array length :500
+Songs found :1
+Time elapsed: 0 hrs : 0 mins : 0 sec : 0 ms : 115622 ns
+________________________________________________________
+
+Number of elements, N =5000
+
+Quadratic Search:
+Table length :12853
+Collisions :4126
+Songs found : 1
+Time elapsed: 0 hrs : 0 mins : 0 sec : 0 ms : 34395 ns
+
+Linear Search: 
+Array length :5000
+Songs found :1
+Time elapsed: 0 hrs : 0 mins : 0 sec : 0 ms : 386979 ns
+________________________________________________________
+
+Number of elements, N =59600
+
+Quadratic Search:
+Table length :205759
+Collisions :54741
+Songs found : 1
+Time elapsed: 0 hrs : 0 mins : 0 sec : 0 ms : 57492 ns
+
+Linear Search: 
+Array length :59600
+Songs found :1
+Time elapsed: 0 hrs : 0 mins : 0 sec : 2 ms : 592180 ns
+________________________________________________________
